@@ -1,0 +1,27 @@
+.swiper {
+    background-color: var(--color-dark-brown);
+}
+
+.slide__link img {
+    width: 99.9%;
+}
+
+.swiper-pagination {
+    --swiper-pagination-color: var(--color-medium-beige);
+}
+
+.carousel__desk {
+    display: none;
+}
+
+@media (min-width: 800px) {
+
+    .carousel {
+        display: none;
+    }
+    
+    .carousel__desk {
+        display: block;
+    }   
+
+}

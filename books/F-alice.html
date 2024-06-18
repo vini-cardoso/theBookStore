@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/faviconl.ico" type="image/x-icon">
+    <title>Alice no País das Maravilhas | theBookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="container__options-left">
+            <div class="container__menu">
+                <input type="checkbox" id="menu" class="container__menu-input">
+                <label for="menu" class="container__label-menu">
+                    <span class="container__icons-menu"></span>
+                </label>
+                <ul class="list-menu">  
+                    <li class="list-menu__item list-menu__titulo">Categorias</li>
+                    <li class="list-menu__item"><a href="/fantasy.html" class="list-menu__link">FANTASIA</a></li>
+                    <li class="list-menu__item"><a href="/business.html" class="list-menu__link">NEGÓCIOS</a></li>
+                    <li class="list-menu__item last-item"><a href="/technology.html" class="list-menu__link">TECNOLOGIA</a></li>
+                    <hr class="line-menu">
+                    <li class="list-menu__item excess"><a href="/about.html" class="list-menu__link">Quem Somos ?</a></li>
+                </ul>
+            </div>    
+            <div class="container__start" onmouseenter="changeIconStart()" onmouseout="changeIconStartInvert()">
+                <a href="/index.html" class="container__start-link" onmouseenter="changeIconStart()" onmouseout="changeIconStartInvert()">
+                    <img class="container__start-icon" src="/images/startIcon.png" alt="Icone de Casa" onmouseenter="changeIconStart()" onmouseout="changeIconStartInvert()">
+                </a>
+            </div>
+            <hr class="line__start-logo">
+            <div class="container__logo-desk">
+                <img class="logo-desk" src="/images/LogoWritingGEdit.png" alt="Logo do site">
+            </div>
+        </div>
+        <div class="container__logo">
+            <img class="container__icons-logo" src="/images/LogoG.png" alt="Logo theBookStore">
+        </div>
+    
+        <div class="container__options-desk">
+            <input type="checkbox" id="options-categories" class="desk-input">
+            <label for="options-categories" class="container-option-desk">
+                <span class="options-desk">CATEGORIAS</span>
+            </label>   
+            <ul class="list-options">
+                <li class="options-item"><a href="/fantasy.html" class="options-link">FANTASIA</a></li>
+                <li class="options-item"><a href="/business.html" class="options-link">NEGÓCIOS</a></li>
+                <li class="options-item"><a href="/technology.html" class="options-link">TECNOLOGIA</a></li>
+            </ul>            
+            <a href="/about.html" class="options-nav">QUEM SOMOS</a>          
+        </div>
+
+        <div class="container__options">
+            <input type="checkbox" id="cart" class="container__cart-input">
+            <label for="cart" class="container__label-cart">
+                <span class="cart-items"></span>
+                <span class="container__icons-cart"></span>
+            </label>           
+            <div class="container__cart">
+                <h4 class="container__cart-title">Carrinho:</h4>
+                <p class="cart-msg">Nenhum item foi selecionado</p>
+                <section class="cart-list">
+                    <p class="cart-list-item"><span class="cart-name"></span><span class="cart-price"></span></p>
+                </section>
+                <h4 class="container__cart-total"><span class="cart-value"></span></h4>
+            </div>            
+            <input type="checkbox" id="user" class="container__user-input">
+            <label for="user" class="container__label-user">
+                <span class="container__icons-user"></span>
+            </label>    
+            <ul class="list-user">  
+                <li class="list-user__item"><a href="#" class="list-user__link">LOGIN</a></li>
+                <li class="list-user__item user__item"><a href="#" class="list-user__link user__link">CADASTRE-SE</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h3 class="path__book"><a href="/index.html" class="path__book-link">Home</a> > <a href="/fantasy.html" class="path__book-link">Fantasia</a> > Alice no País das Maravilhas</h3>
+
+        <div class="pagebook__container">
+            <div class="pagebook__container-img">
+                <img src="/images/bookFAli.jpg" class="pagebook__img-desk" alt="Livro Alice no País das Maravilhas">
+            </div>
+            <div class="space__containers"></div>
+            <div class="pagebook__info-desk">
+                <h3 class="pagebook__container-title">Alice no País das Maravilhas</h3>
+                <p class="pagebook-about-responsible">Lewis Carroll (Autor), John Tenniel (Ilustrador)</p>
+                <h3 class="pagebook-price">R$ 49,99</h3>
+                <a class="pagebook-button">COMPRAR</a>
+                <div class="pagebook__block-payments">
+                    <p class="pagebook__container-payments">Formas de pagamento |<img src="/images/payments.png" class="pagebook__container-iconspay" alt="icones de pagamento"></p>
+                </div>
+                <button type="button" class="button-cart excess-cart--pagebook">
+                    <span class="info-book">Alice no País das Maravilhas-49,99</span>
+                    <img src="/images/cartIconBro.png" alt="icone de carrinho de compras" class="button-img">
+                    <p>| Adicionar ao carrinho</p>
+                </button>
+                <div class="space__pagebook-description"></div>
+                <div class="pagebook__container-about-desk">
+                    <h3 class="pagebook-about">Sobre</h3>
+                    <p class="pagebook__container-description">Uma menina, um coelho e uma história capazes de fazer qualquer um de nós voltar a sonhar. Alice é despertada de um leve sono ao pé de uma árvore por um coelho peculiar. Uma criatura alva e falante com roupas engraçadas, que consulta seu relógio e reclama do próprio atraso. Curiosa como toda criança, Alice segue o animal até cair em um buraco sem fim que mudou para sempre a literatura infantil. Mais de 150 anos depois, Alice no País das Maravilhas continua repleto de ensinamentos para aqueles que ousaram seguir o Coelho Branco até sua toca.</p>
+                </div>
+            </div>
+        </div>   
+        
+        <div class="pagebook__container-about-mob">
+            <h3 class="pagebook-about">Sobre</h3>
+            <p class="pagebook__container-description">Uma menina, um coelho e uma história capazes de fazer qualquer um de nós voltar a sonhar. Alice é despertada de um leve sono ao pé de uma árvore por um coelho peculiar. Uma criatura alva e falante com roupas engraçadas, que consulta seu relógio e reclama do próprio atraso. Curiosa como toda criança, Alice segue o animal até cair em um buraco sem fim que mudou para sempre a literatura infantil. Mais de 150 anos depois, Alice no País das Maravilhas continua repleto de ensinamentos para aqueles que ousaram seguir o Coelho Branco até sua toca.</p>
+        </div>
+
+        <div class="space__pagebook-desk"></div>
+
+        <h2 class="pagebook__carrossel-titulo">Você também pode gostar</h2>
+        <div class="container__suggestions">
+            <div class="container__suggestions-item"><a href="F-harryII.html" class="suggestions-link"><img src="/images/bookFHPII.jpg" alt="Livro Harry Potter" class="suggestions-img"></a></div>
+            <div class="container__suggestions-item"><a href="F-harryVI.html" class="suggestions-link"><img src="/images/bookFHPVI.jpg" alt="Livro Harry Potter e o Enigma do Príncipe" class="suggestions-img"></a></div>
+            <div class="container__suggestions-item"><a href="F-hobbit.html" class="suggestions-link"><img src="/images/bookFHB.PNG" alt="Livro O Hobbit" class="suggestions-img"></a></div>
+            <div class="container__suggestions-item-desk"><a href="F-pequeno.html" class="suggestions-link"><img src="/images/bookFPP.PNG" alt="Livro Pequeno Príncipe" class="suggestions-img"></a></div>
+            <div class="container__suggestions-item-desk"><a href="T-ocod.html" class="suggestions-link"><img src="/images/bookTCod.jpg" alt="Livro O Código" class="suggestions-img"></a></div>
+        </div>
+
+        <div class="space__pagebook-desk"></div>
+
+        <section class="container__topics">
+            <h2 class="topics-title">TÓPICOS MAIS VISITADOS</h2>
+            <ul class="container__topics-list">
+                <li class="list-item"><a href="/business.html" class="list-link">Negócios</a></li>
+                <li class="list-item"><a href="F-hobbit.html" class="list-link">O Hobbit</a></li>
+                <li class="list-item"><a href="/technology.html" class="list-link">Tecnologia</a></li>
+                <li class="list-item"><a href="T-ocod.html" class="list-link">Código limpo</a></li>
+                <li class="list-item"><a href="B-mindset.html" class="list-link">Mindset</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container__footer">
+            <img src="/images/LogoWritingGEdit.png" class="footer-logo" alt="Logo theBookStore">
+            <div class="footer-desk-container">
+                <img src="/images/LogoG.png" class="footer-logo-desk" alt="Logo theBookStore">
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-content-container">
+                <p class="footer-button"><a href="/about.html" class="footer-link">Quem Somos ?</a></p>
+                <p class="footer-payments">Formas de pagamento |<img src="/images/payments.png" class="footer-iconspay" alt="icones de pagamento"></p>
+            </div>
+        </section>
+        <section>
+            <p class="footer-copyright">theBookStore© - Todos os direitos reservados</p>
+        </section>
+    </footer>
+    
+    <script src="/app.js"></script>
+</body>
+</html>

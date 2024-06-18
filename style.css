@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url("styles/navlane.css");
+@import url("styles/carousel.css");
+@import url("styles/books.css");
+@import url("styles/authors.css");
+@import url("styles/topics.css");
+@import url("styles/footer.css");
+@import url("styles/shoppingcart.css");
+@import url("styles/fantasy.css");
+@import url("styles/pagebook.css");
+@import url("styles/about.css");
+
+:root {
+    --color-xdark-brown: #66523C;
+    --color-dark-brown: #8A6F51;
+    --color-medium-beige: #E2E1B1;
+    --color-light-beige: #FCFBDD;
+    --color-gradient: linear-gradient(to right, #705A42, #8C6F51, #705A42);
+    --color-unavailable: #C7C7C7;
+    --font: "Anek Malayalam", sans-serif;
+}
+
+body {
+    background-color: var(--color-light-beige);
+    font-family: var(--font);
+    box-sizing: border-box;
+}

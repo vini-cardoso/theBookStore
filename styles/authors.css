@@ -1,0 +1,154 @@
+.container__authors-mob {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.container__authors-card {    
+    width: 20.37rem;
+    background-color: white;
+    display: flex;
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 0px var(--color-dark-brown);
+}
+
+.container__authors-img {
+    width: 6.37rem;
+    padding: 4px;
+}
+
+.authors-content {
+    padding: 4px 10px;
+}
+
+.authors-content--titulo {
+    color: var(--color-xdark-brown);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.authors-division {
+    color: var(--color-dark-brown);
+}
+
+.authors-content--description {
+    padding: 0px 0px 8px 0px;
+    text-align: justify;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.authors-content--available {
+    text-align: center;
+    color: var(--color-xdark-brown);
+    padding-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.authors-link {
+    text-align: center;
+}
+
+.authors-content--book {
+    color: var(--color-medium-beige);
+    text-decoration: none;
+    font-weight: 500;
+    background-color: var(--color-dark-brown);
+    border-radius: 12px;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+}
+
+.authors-content--book:hover {
+    background-color: var(--color-xdark-brown);
+    transition: 0.6s;
+}
+
+.container__authors-desk {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    
+    .container__authors-mob {
+        display: none;
+    }
+
+    .container__authors-desk {
+        display: flex;
+        justify-content: center;
+    }
+
+    .authors-desk-card {
+        display: flex;
+        margin: 0 25px;
+    }
+
+    .card-author {
+        width: 100%;
+        margin-bottom: 25px;
+        box-shadow: 1px 1.5px 3px 1px rgba(0, 0, 0, 0.20);
+        position: relative;
+    }
+
+    .author__img-desk {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .card-intro {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0; 
+        transition: 0.4s;
+    }
+
+    .card-intro-title {
+        font-size: 1.6rem;
+        padding-top: 8px;
+    }
+
+    .card-intro-text {
+        font-size: 1.1rem;
+        font-weight: 200;
+        line-height: 1.2;
+        padding: 0 15px;
+    }
+
+    .authors-content--book {
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+    }
+    
+    .authors-desk-card:hover .card-intro{
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    .card-intro > * {
+        transform: translateY(25px);
+        transition: transform 0.6s;
+    }
+
+    .authors-desk-card:hover .card-intro > * {
+        transform: translateY(0px);
+    }
+
+    .authors-content--book:hover {
+        transition: 0.3s;
+    }
+}

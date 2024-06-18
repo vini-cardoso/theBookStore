@@ -1,0 +1,116 @@
+.banner__logo-mob {
+    width: 100%;
+}
+
+.container__about {
+    background-color: white;
+    border: 1px solid var(--color-xdark-brown);
+    padding: 18px 0;
+    margin: 8px 0;
+}
+
+.container__about-title {
+    font-size: 1.5rem;
+    color: var(--color-xdark-brown);
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+strong {
+    font-weight: 600;
+    color: var(--color-xdark-brown);
+}
+
+.container__about-description {
+    font-size: 1.1rem;
+    padding: 0 25px 25px 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.container__about-subtitle {
+    font-size: 1.1rem;
+    color: var(--color-xdark-brown);
+    border: 2px solid var(--color-xdark-brown);
+    width: 160px;
+    font-weight: 600;
+    padding: 5px 0;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.space__about {
+    height: 10px;
+    width: 100%;
+}
+
+.container__about-socialmedia {
+    color: var(--color-xdark-brown);
+    text-align: center;
+    font-weight: 550;
+    display: flex; 
+    justify-content: left;
+    padding-bottom: 8px;
+    width: 147px;
+    margin: auto;
+}
+
+.about-socialmedia-icon {
+    width: 20px;
+    padding-right: 6px;
+}
+
+.banner__logo-desk {
+    display: none;
+}
+
+.container__about-imagem {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .banner__logo-mob {
+        display: none;
+    }
+    
+    .banner__logo-desk {
+        display: block;
+        width: 100%;
+    }
+
+    .container__about {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+
+    .container__about-infos {
+        width: 490px;
+        margin: auto;
+        margin-right: 10px;
+    }
+
+    .container__about-description {
+        margin: auto;
+        line-height: 1.7;
+        padding: 0 25px 25px 25px;
+    }
+
+    .container__about-imagem {
+        display: block;
+        width: 380px;
+        margin: auto;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    .about__imagem-desk {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid var(--color-xdark-brown);
+        margin: auto;
+    }
+
+}

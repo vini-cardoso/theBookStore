@@ -1,0 +1,257 @@
+.container__title {
+    background-color: var(--color-medium-beige);
+    color: var(--color-dark-brown);
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.container__books{
+    display: flex;
+    gap: 2%;
+    margin-bottom: 8px;
+}
+
+.container__item {
+    width: 47%;
+    background-color: white;
+    padding: 7px;
+    border-radius: 2px;
+    box-shadow: 1px 1.5px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.unavailable__item {
+    opacity: 0.6;
+}
+
+.container__link {
+    text-decoration: none;
+    width: 100%;
+}
+
+.container__img {
+    width: 100%;
+}
+
+.book-title {
+    height: 33px;
+    text-align: center;
+    align-content: center;
+    margin: 5px 0px 1px 0px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+}
+
+.book-desk {
+    display: none;
+}
+
+.container__buy {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 17px;
+}
+
+.book-price {
+    display: inline;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 700;
+    margin-right: 4%;
+}
+
+.book-button, .unavailable-button{
+    font-size: 0.8rem;
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 9px 6px 9px;
+    border-radius: 1px;
+}
+
+.book-button {
+    background-color: var(--color-dark-brown);
+    color: var(--color-medium-beige);
+}
+
+.book-button:hover {
+    background-color: var(--color-xdark-brown);
+    transition: 0.6s;
+}
+
+.unavailable-button {
+    background-color: var(--color-unavailable);    
+    color: black;
+    opacity: 0.7;
+}
+
+.container__item:hover {
+    border: 1px solid var(--color-dark-brown);
+}
+
+.button-cart, .unavailable-cart {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 0.7rem;
+}
+
+.button-cart {
+    padding: 3px 8%;
+    width: 100%;
+    background-color: var(--color-medium-beige);
+    color: var(--color-xdark-brown);
+    border: 0px solid var(--color-dark-brown);
+    font-weight: 600;
+}
+
+.unavailable-cart {
+    cursor: default;
+    margin: auto;
+    padding: 4px 0;
+    width: 90%;
+}
+
+.unavailable-cart-button {
+    align-content: center;
+}
+
+.unavailable-cart {
+    background-color: var(--color-unavailable);
+    color: black;
+    opacity: 0.7;
+    font-weight: 400;
+    border: 0;
+}
+
+.button-img {
+    width: 12px;
+    padding-top: 1px;
+    padding-right: 3px;
+}
+
+.info-book {
+    display: none;
+}
+
+.button-cart:hover {
+    cursor: pointer;
+    background-color: #F0EFBB;
+    transition: 0.5s;
+}
+
+.space-pagebook {
+    display: none;
+}
+
+.category-bannner {
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+
+    .container__title {
+        font-weight: 600;
+        margin: 18px 0;
+        font-size: 1.5rem;
+    }
+
+    .page-space-book {
+        margin: 0px 0 18px 0;
+    }
+
+    .container__books-list {
+        display: flex;
+        margin: 0 5%;
+        gap: 1%;
+    }
+
+    .space__book-list {
+        margin: 0 8%;
+    }
+
+    .container__books{
+        justify-content: space-around;
+        margin-bottom: 0px;
+    }
+    
+    .container__item {
+        display: block;
+        width: 44%;
+        box-shadow: 1px 1px 3px 0.5px rgba(0, 0, 0, 0.25);
+    }
+
+    .book-desk {
+        display: none;
+    }
+
+    .container__item:hover .container__img{
+        transform: scale(1.011);
+        transition: 0.7s;
+    }
+
+    .container__item:hover{
+        border: none;
+    }
+    
+    .book-title {
+        font-size: 1rem;
+    }
+
+    .book-price {
+        font-size: 0.9rem;
+    }
+    
+    .book-button {
+        font-size: 0.8rem;
+        padding: 8px 11px 6px 11px;
+    }
+
+    .button-cart {
+        text-align: center;
+        font-size: 0.7rem;
+        font-weight: 500;
+        width: 90%;
+        padding: 4px 6px;
+        margin: 0 4%;
+    }
+     
+    .button-img {
+        width: 13px;
+        padding-top: 1px;
+        padding-right: 3px;
+    }
+
+    .space-pagebook {
+        display: block;
+        height: 20px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1050px) {
+
+    .space__book-list {
+        margin: 0 15%;
+    }
+    
+    .book-mob {
+        display: none;
+    }
+
+    .book-title {
+        font-size: 1rem;
+    }
+
+    .book-price {
+        font-size: 1rem;
+    }
+
+    .book-desk {
+        display: block;
+    }
+}
